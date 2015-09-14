@@ -1,0 +1,30 @@
+{
+  "name": "application",
+  "version": "1.0.0",
+  "description": "api, crawler for belgiumjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "mocha -w"
+  },
+  "keywords": [
+    "javascript",
+    "angular",
+    "reactjs",
+    "meetups",
+    "webpack"
+  ],
+  "author": "davyengone",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.4.5",
+    "express": "^4.13.3",
+    "react": "^0.13.3",
+    "request": "^2.61.0"
+  },
+  "devDependencies": {
+    "babel-core": "^5.8.24",
+    "babel-loader": "^5.3.2",
+    "webpack": "^1.12.1"
+  }
+}
