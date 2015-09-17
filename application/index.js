@@ -1,23 +1,18 @@
-import angular from 'angular';
+import React from 'react';
 
-
+// Components
+import Meetups from './components/meetups';
 let {
-	module,
-	bootstrap
-} = angular;
+	Component
+} = React;
 
 
-module('app', [])
-	.controller("AsyncController", function($http){
-		debugger;
+class Shell extends Component{
+	render(){
+		return <div>
+							<Meetups/>
+						</div>;
+	}
+}
 
-		$http.get('https://api.github.com/user/davyengone')
-			.then(function(res){
-				debugger
-			});		
-	});
-
-console.log('inside here');
-
-
-	bootstrap(document.body, ['app']);
+React.render(<Shell/>, document.body);
