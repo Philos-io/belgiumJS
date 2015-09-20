@@ -1,2 +1,0 @@
-# belgiumJS
-Belgium JavaScript Website
