@@ -1,5 +1,5 @@
-var webpack = require("webpack");
-
+var webpack   = require("webpack");
+var path      = require('path');
 
 var jqueryPlugin = new webpack.ProvidePlugin({
         $: "jquery",
@@ -9,9 +9,9 @@ var jqueryPlugin = new webpack.ProvidePlugin({
 
 
 module.exports = {
-	entry: './index.js',
+	entry: './public/index.js',
 	output: {
-		path: __dirname,
+		path: path.join(__dirname, 'public'),
 		filename: "bundle.js"
 	},
 	module: {
@@ -56,5 +56,8 @@ module.exports = {
 		]
 
 	},
-	plugins: [ jqueryPlugin ]
+	plugins: [ jqueryPlugin ],
+  devServer: {
+        contentBase: "./public",
+    }
 };
