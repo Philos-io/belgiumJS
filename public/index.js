@@ -1,7 +1,8 @@
 import React from 'react';
-
+import './js/material.min.js';
 // Components
-import Meetups from './components/meetups';
+import Header from './components/header';
+// import Meetups from './components/meetups';
 let {
 	Component
 } = React;
@@ -10,8 +11,8 @@ let {
 class Shell extends Component{
 	render(){
 		return <div>
-							<Meetups/>
-						</div>;
+						<Header/>
+		       </div>;
 	}
 }
 
