@@ -14,7 +14,7 @@ class Header extends React.Component{
       <div className="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div className="mdl-layout__header-row">
           <span className="android-title mdl-layout-title">
-            <img className="android-logo-image" src="images/belgiumjs-logo-32.png"/>
+            <img className="android-logo-image" src="public/images/belgiumjs-logo-32.png"/>
           </span>
           <div className="android-header-spacer mdl-layout-spacer"></div>
           <div className="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">

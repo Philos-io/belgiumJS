@@ -27,11 +27,18 @@ class Meetups extends React.Component{
 
   render(){
     var meetups = this.state.meetups.map((meetup) =>{
-      return <Meetup key={meetup.id} source={meetup}/>;
+      //debugger
+        if (meetup.group_photo) {
+            return <Meetup key={meetup.id} source={meetup}/>;
+        }
     });
 
-    return <div></div>;
-
+    return (<div className="android-more-section">
+              <div className="android-section-title mdl-typography--display-1-color-contrast">JavaScript Meetups</div>
+                <div className="android-card-container mdl-grid">
+                  {{meetups}}
+                </div>
+            </div>);
   }
 }
 
