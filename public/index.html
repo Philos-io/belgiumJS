@@ -2,17 +2,84 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="BelgiumJS, JavaScript in one place in Belgium">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Page styles -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="css/material.min.css">
-    <link rel="stylesheet" href="styles.css">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="BelgiumJS, JavaScript in one place in Belgium">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Page styles -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- <link rel="stylesheet" href="css/material.min.css"> -->
+		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.light_blue-blue.min.css" />
+		<link rel="stylesheet" href="styles.css">
 		<title>BelgiumJS is coming</title>
+		<!-- Event card -->
+		<style>
+   	 .demo-card-event.mdl-card {
+			 width: 256px;
+			 height: 256px;
+			 background: #3E4EB8;
+		 }
+		 .demo-card-event > .mdl-card__actions {
+			 border-color: rgba(255, 255, 255, 0.2);
+		 }
+		 .demo-card-event > .mdl-card__title {
+			 align-items: flex-start;
+		 }
+		 .demo-card-event > .mdl-card__title > h4 {
+			 margin-top: 0;
+		 }
+		 .demo-card-event > .mdl-card__actions {
+			 display: flex;
+			 box-sizing:border-box;
+			 align-items: center;
+		 .demo-card-event > .mdl-card__title,
+		 .demo-card-event > .mdl-card__actions,
+		 .demo-card-event > .mdl-card__actions > .mdl-button {
+			 color: #fff;
+		 }
+		</style>
 	</head>
 	<body>
-		<script src="/public/bundle.js"></script>
+		<!-- Simple header with scrollable tabs. -->
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+			<header class="mdl-layout__header">
+				<div class="mdl-layout__header-row main-header">
+					<!-- Title -->
+					<img src="images/belgiumjs-logo-32.png" alt="JavaScript in Belgium" />
+					<span class="mdl-layout-title"></span>
+				</div>
+				<!-- Tabs -->
+				<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+					<a href="#scroll-tab-1" class="mdl-layout__tab is-active">Events</a>
+					<a href="#scroll-tab-2" class="mdl-layout__tab">Blogs</a>
+					<a href="#scroll-tab-3" class="mdl-layout__tab">Jobs</a>
+					<a href="#scroll-tab-4" class="mdl-layout__tab">Products</a>
+				</div>
+			</header>
+			<main class="mdl-layout__content">
+			<section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+				<div class="page-content">
+
+				</div>
+			</section>
+			<section class="mdl-layout__tab-panel" id="scroll-tab-2">
+				<div class="page-content"><!-- Your content goes here --></div>
+			</section>
+			<section class="mdl-layout__tab-panel" id="scroll-tab-3">
+				<div class="page-content"><!-- Your content goes here --></div>
+			</section>
+			<section class="mdl-layout__tab-panel" id="scroll-tab-4">
+				<div class="page-content"><!-- Your content goes here --></div>
+			</section>
+			<section class="mdl-layout__tab-panel" id="scroll-tab-5">
+				<div class="page-content"><!-- Your content goes here --></div>
+			</section>
+			<section class="mdl-layout__tab-panel" id="scroll-tab-6">
+				<div class="page-content"><!-- Your content goes here --></div>
+			</section>
+			</main>
+		</div>
+		<script src="/js/material.min.js"></script>
+		<!-- <script src="/public/bundle.js"></script> -->
 	</body>
 </html>

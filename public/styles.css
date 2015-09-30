@@ -550,3 +550,19 @@ a img{
     display: none;
   }
 }
+
+.main-header img{
+      height: 50px;
+}
+
+.mdl-layout__header,
+.mdl-layout__tab-bar,
+.mdl-layout__tab-bar-button
+{
+  background-color: #54aeff;
+}
+
+
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active{
+  color: white;
+}
