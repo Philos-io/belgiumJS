@@ -14,29 +14,33 @@
 		<title>BelgiumJS is coming</title>
 		<!-- Event card -->
 		<style>
-   	 .demo-card-event.mdl-card {
-			 width: 256px;
-			 height: 256px;
-			 background: #3E4EB8;
-		 }
-		 .demo-card-event > .mdl-card__actions {
-			 border-color: rgba(255, 255, 255, 0.2);
-		 }
-		 .demo-card-event > .mdl-card__title {
-			 align-items: flex-start;
-		 }
-		 .demo-card-event > .mdl-card__title > h4 {
-			 margin-top: 0;
-		 }
-		 .demo-card-event > .mdl-card__actions {
-			 display: flex;
-			 box-sizing:border-box;
-			 align-items: center;
-		 .demo-card-event > .mdl-card__title,
-		 .demo-card-event > .mdl-card__actions,
-		 .demo-card-event > .mdl-card__actions > .mdl-button {
-			 color: #fff;
-		 }
+
+		.demo-card-image.mdl-card.card1 {
+				width: 350px;
+				height: 175px;
+				background: url('images/angularjs.png') center / cover;
+		}
+		.demo-card-image.mdl-card.card2 {
+				width: 350px;
+				height: 175px;
+				background: url('images/JS.png') center / cover;
+		}
+		.demo-card-image.mdl-card.card3 {
+				width: 350px;
+				height: 175px;
+				background: url('images/meteor.png') center / cover;
+		}
+		.demo-card-image > .mdl-card__actions {
+				height: 52px;
+				padding: 16px;
+				background: rgba(0, 0, 0, 0.2);
+		}
+		.demo-card-image__filename {
+				color: #fff;
+				font-size: 14px;
+				font-weight: 500;
+			}
+
 		</style>
 	</head>
 	<body>
@@ -59,7 +63,39 @@
 			<main class="mdl-layout__content">
 			<section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
 				<div class="page-content">
+					<div class="mdl-grid mdl-cell--events">
+					  <div class="mdl-cell mdl-cell--4-col">
+							<div class="demo-card-image mdl-card mdl-shadow--2dp card1">
+							  <div class="mdl-card__title mdl-card--expand"></div>
+							  <div class="mdl-card__actions">
+							    <span class="demo-card-image__filename">AngularJS Belgium</span>
+							  </div>
+							</div>
+						</div>
+					  <div class="mdl-cell mdl-cell--4-col">
+							<div class="demo-card-image mdl-card mdl-shadow--2dp card2">
+							  <div class="mdl-card__title mdl-card--expand"></div>
+							  <div class="mdl-card__actions">
+							    <span class="demo-card-image__filename">JavaScript Lab</span>
+							  </div>
+							</div>
+						</div>
+					  <div class="mdl-cell mdl-cell--4-col">
+							<div class="demo-card-image mdl-card mdl-shadow--2dp card3">
+							  <div class="mdl-card__title mdl-card--expand"></div>
+							  <div class="mdl-card__actions">
+							    <span class="demo-card-image__filename">Meteor Belgium</span>
+							  </div>
+							</div>
+						</div>
+					</div>
+						<div class="mdl-row">
+							something here
+						</div>
 
+						<div class="mdl-row">
+							long card should go here...
+						</div>
 				</div>
 			</section>
 			<section class="mdl-layout__tab-panel" id="scroll-tab-2">
