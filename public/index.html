@@ -2,17 +2,120 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="BelgiumJS, JavaScript in one place in Belgium">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Page styles -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="css/material.min.css">
-    <link rel="stylesheet" href="styles.css">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="BelgiumJS, JavaScript in one place in Belgium">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Page styles -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!-- <link rel="stylesheet" href="css/material.min.css"> -->
+		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.light_blue-blue.min.css" />
+		<link rel="stylesheet" href="styles.css">
 		<title>BelgiumJS is coming</title>
+		<!-- Event card -->
+		<style>
+
+		.demo-card-image.mdl-card.card1 {
+				width: 350px;
+				height: 175px;
+				background: url('images/angularjs.png') center / cover;
+		}
+		.demo-card-image.mdl-card.card2 {
+				width: 350px;
+				height: 175px;
+				background: url('images/JS.png') center / cover;
+		}
+		.demo-card-image.mdl-card.card3 {
+				width: 350px;
+				height: 175px;
+				background: url('images/meteor.png') center / cover;
+		}
+		.demo-card-image > .mdl-card__actions {
+				height: 52px;
+				padding: 16px;
+				background: rgba(0, 0, 0, 0.2);
+		}
+		.demo-card-image__filename {
+				color: #fff;
+				font-size: 14px;
+				font-weight: 500;
+			}
+
+		</style>
 	</head>
 	<body>
-		<script src="/public/bundle.js"></script>
+		<!-- Simple header with scrollable tabs. -->
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+			<header class="mdl-layout__header">
+				<div class="mdl-layout__header-row main-header">
+					<!-- Title -->
+					<img src="images/belgiumjs-logo-32.png" alt="JavaScript in Belgium" />
+					<span class="mdl-layout-title"></span>
+				</div>
+				<!-- Tabs -->
+				<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+					<a href="#scroll-tab-1" class="mdl-layout__tab is-active">Events</a>
+					<a href="#scroll-tab-2" class="mdl-layout__tab">Blogs</a>
+					<a href="#scroll-tab-3" class="mdl-layout__tab">Jobs</a>
+					<a href="#scroll-tab-4" class="mdl-layout__tab">Products</a>
+				</div>
+			</header>
+			<main class="mdl-layout__content">
+			<section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+				<div class="page-content">
+					<div class="mdl-grid mdl-cell--events">
+					  <div class="mdl-cell mdl-cell--4-col">
+							<div class="demo-card-image mdl-card mdl-shadow--2dp card1">
+							  <div class="mdl-card__title mdl-card--expand"></div>
+							  <div class="mdl-card__actions">
+							    <span class="demo-card-image__filename">AngularJS Belgium</span>
+							  </div>
+							</div>
+						</div>
+					  <div class="mdl-cell mdl-cell--4-col">
+							<div class="demo-card-image mdl-card mdl-shadow--2dp card2">
+							  <div class="mdl-card__title mdl-card--expand"></div>
+							  <div class="mdl-card__actions">
+							    <span class="demo-card-image__filename">JavaScript Lab</span>
+							  </div>
+							</div>
+						</div>
+					  <div class="mdl-cell mdl-cell--4-col">
+							<div class="demo-card-image mdl-card mdl-shadow--2dp card3">
+							  <div class="mdl-card__title mdl-card--expand"></div>
+							  <div class="mdl-card__actions">
+							    <span class="demo-card-image__filename">Meteor Belgium</span>
+							  </div>
+							</div>
+						</div>
+					</div>
+						<div class="mdl-row">
+							something here
+						</div>
+
+						<div class="mdl-row">
+							long card should go here...
+						</div>
+				</div>
+			</section>
+			<section class="mdl-layout__tab-panel" id="scroll-tab-2">
+				<div class="page-content"><!-- Your content goes here --></div>
+			</section>
+			<section class="mdl-layout__tab-panel" id="scroll-tab-3">
+				<div class="page-content"><!-- Your content goes here --></div>
+			</section>
+			<section class="mdl-layout__tab-panel" id="scroll-tab-4">
+				<div class="page-content"><!-- Your content goes here --></div>
+			</section>
+			<section class="mdl-layout__tab-panel" id="scroll-tab-5">
+				<div class="page-content"><!-- Your content goes here --></div>
+			</section>
+			<section class="mdl-layout__tab-panel" id="scroll-tab-6">
+				<div class="page-content"><!-- Your content goes here --></div>
+			</section>
+			</main>
+		</div>
+		<script src="/js/material.min.js"></script>
+		<!-- <script src="/public/bundle.js"></script> -->
 	</body>
 </html>
